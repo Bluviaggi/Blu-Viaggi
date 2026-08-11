@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaggi Insieme | Viaggi Organizzati in Bus GT e Traghetto (Senza Aereo)</title>
+  <meta name="description" content="Agenzia viaggi specializzata in tour organizzati da 7 a 12 notti in autobus Gran Turismo e traghetto. Pacchetti sul mare, cultura e soluzioni per persone con disabilità.">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Top Bar Notice -->
+  <div class="demo-top-bar" id="demo-top-bar">
+    <span>🚍 <strong>Partenze 2026:</strong> Viaggi organizzati esclusivamente in Autobus Gran Turismo e Traghetto (Nessun aereo).</span>
+    <button type="button" id="open-configurator-btn" title="Personalizza i dati dell'agenzia">
+      ⚙️ Personalizza Dati Agenzia
+    </button>
+  </div>
+
+  <!-- Header Navbar con Logo Piccolo in Alto a Sinistra -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Logo Piccolo -->
+        <a href="#home" class="logo">
+          <div class="logo-icon-box" aria-hidden="true">🚌</div>
+          <div class="logo-text">
+            <span class="logo-name agency-name">Viaggi Insieme</span>
+            <span class="logo-tagline">100% In Bus & Traghetto</span>
+          </div>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav aria-label="Navigazione principale">
+          <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#flotta" class="nav-link">Autobus GT</a></li>
+            <li><a href="#viaggi" class="nav-link">I Nostri Pacchetti</a></li>
+            <li><a href="#accessibilita" class="nav-link">100% Accessibile ♿</a></li>
+            <li><a href="#senior" class="nav-link">Viaggiare Comodi</a></li>
+            <li><a href="#recensioni" class="nav-link">Recensioni</a></li>
+            <li><a href="#galleria" class="nav-link">Galleria Foto</a></li>
+            <li><a href="#contatti" class="nav-link">Contatti</a></li>
+          </ul>
+        </nav>
+
+        <!-- Azioni Rapide Header -->
+        <div class="header-actions">
+          <a href="tel:+393509079479" class="btn-phone agency-phone">
+            📞 <span class="phone-num">+39 350 907 9479</span>
+          </a>
+          <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Apri menu mobile">
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Menu Mobile">
+    <div class="drawer-header">
+      <div class="logo-text">
+        <span class="logo-name agency-name">Viaggi Insieme</span>
+        <span class="logo-tagline">Menu di Navigazione</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close-btn" aria-label="Chiudi menu">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#flotta" class="mobile-nav-link">I Nostri Autobus GT</a></li>
+      <li><a href="#viaggi" class="mobile-nav-link">Pacchetti 7 - 12 Notti</a></li>
+      <li><a href="#accessibilita" class="mobile-nav-link">💙 Tour 100% Accessibile</a></li>
+      <li><a href="#senior" class="mobile-nav-link">Viaggiare Comodi (Senior)</a></li>
+      <li><a href="#recensioni" class="mobile-nav-link">Recensioni Clienti</a></li>
+      <li><a href="#galleria" class="mobile-nav-link">Galleria Foto</a></li>
+      <li><a href="#contatti" class="mobile-nav-link">Richiedi Informazioni</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top:20px; border-top:1px solid var(--color-border);">
+      <a href="tel:+393509079479" class="btn btn-primary btn-full agency-phone">
+        📞 Chiama: +39 350 907 9479
+      </a>
+    </div>
+  </aside>
+
+  <!-- HERO SECTION NOTTURNA E LUMINOSA -->
+  <section class="hero-section" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span>🌊 L'Italia del Mare in Autobus GT e Traghetto (Senza Aereo)</span>
+          </div>
+          <h1 class="hero-title">L’Italia da vivere sul mare, insieme.</h1>
+          <p class="hero-subtitle">
+            Soggiorni e tour organizzati da 7 fino a 12 notti (prezzo massimo € 1.450). Autobus Gran Turismo con poltrone reclinated, sollevatori per disabili, traghetti con cabine e ritmi senza fretta.
+          </p>
+          <div class="hero-actions">
+            <a href="#viaggi" class="btn btn-primary">
+              Scopri i Pacchetti 2026
+            </a>
+            <a href="#contatti" class="btn btn-secondary">
+              Richiedi Preventivo Gratuito
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-image-wrapper">
+            <img src="./src/assets/images/hero_italy_bus_tour_1786482928689.jpg" alt="Autobus Gran Turismo e paesaggi di mare in Italia" referrerPolicy="no-referrer">
+            <div class="hero-image-disclaimer">
+              * Autobus Gran Turismo di ultima generazione
+            </div>
+          </div>
+          <div class="hero-float-card">
+            <div class="hero-float-icon">🚍</div>
+            <div class="hero-float-text">
+              Soste di ristoro programmate ogni 90-120 min & Sollevatore per Carrozzine
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">🚌</div>
+          <div class="trust-text">Solo Bus GT Deluxe & Traghetti (Zero Voli)</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">⏱️</div>
+          <div class="trust-text">Itinerari da 7 a 12 Notti fino a Max €1.450</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">♿</div>
+          <div class="trust-text">Tour 100% Accessibile con Sollevatore H</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">👥</div>
+          <div class="trust-text">Accompagnatore h24 & Assistenza Dedicata</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEZIONE FLOTTA AUTOBUS GT -->
+  <section class="fleet-section" id="flotta">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">I Nostri Mezzi di Trasporto</span>
+        <h2 class="section-title">I Nostri Autobus Gran Turismo (100% Senza Aereo)</h2>
+        <p class="section-subtitle">
+          Viaggiare in bus significa godersi il paesaggio dal finestrino senza gli stress dell'aeroporto, delle file e dei bagagli ridotti. I nostri pullman offrono il massimo comfort:
+        </p>
+      </div>
+
+      <div class="fleet-grid" id="fleet-container">
+        <!-- Renderizzato dinamicamente da script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE "PACCHETTI VIAGGIO" -->
+  <section class="section section-alt" id="viaggi">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Calendario Partenze 2026</span>
+        <h2 class="section-title">Pacchetti da 7 a 12 Notti (Max € 1.450)</h2>
+        <p class="section-subtitle">
+          Itinerari completi sul mare e borghi in Italia. Prezzi finiti tutto incluso, nessun costo nascosto.
+        </p>
+      </div>
+
+      <!-- Filtri Categorie -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" onclick="filterTrips('all', this)">Tutti i pacchetti</button>
+        <button class="filter-btn" onclick="filterTrips('isole', this)">Mare & Isole 🌊</button>
+        <button class="filter-btn" onclick="filterTrips('cultura', this)">Arte & Borghi 🏛️</button>
+        <button class="filter-btn" onclick="filterTrips('accessibile', this)">100% Accessibile ♿</button>
+      </div>
+
+      <!-- Contenitore Card Viaggi -->
+      <div class="trips-grid" id="trips-container">
+        <!-- Renderizzato dinamicamente da script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE SPECIALE ACCESSIBILITÀ -->
+  <section class="accessibility-section" id="accessibilita">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">💙 Speciale Inclusione & Accessibilità</span>
+        <h2 class="section-title" style="color:#FFFFFF;">Tour 100% Accessibile per Disabili e Senior</h2>
+        <p class="section-subtitle">
+          Servizi pensati e collaudati per persone in carrozzina o con ridotta mobilità. Nessun ostacolo, hotel 4★ certificati, bus GT con sollevatore e assistenti dedicati.
+        </p>
+      </div>
+
+      <div class="accessibility-grid" id="accessibility-guarantees-container">
+        <!-- Renderizzato dinamicamente da script.js -->
+      </div>
+
+      <div class="accessibility-notices">
+        <div class="notice-box">
+          <div class="notice-box-title">📋 Scheda Preventiva delle Esigenze Personali</div>
+          <div class="notice-box-text">
+            Prima di ogni prenotazione, il nostro ufficio raccoglie la scheda delle esigenze individuali (misura carrozzina, camera con doccia H, accompagnatore) per configurare il viaggio in totale tranquillità.
+          </div>
+        </div>
+
+        <div class="notice-box">
+          <div class="notice-box-title">🛡️ Massima Trasparenza sulle Strutture</div>
+          <div class="notice-box-text">
+            I nostri tour forniscono accompagnamento ed assistenza turistica specializzata. Verifichiamo direttamente l'assenza di barriere in hotel, pullman e ristoranti prima di ogni partenza.
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="#contatti" class="btn btn-primary">
+          Richiedi Modulo di Valutazione Accessibilità
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE SENIOR -->
+  <section class="section" id="senior">
+    <div class="container">
+      <div class="senior-grid">
+        <div class="senior-content">
+          <span class="section-tag">Viaggiare con Calma</span>
+          <h2 class="section-title">Viaggiare comodi, senza correre.</h2>
+          <p class="section-subtitle" style="text-align: left;">
+            Pianifichiamo ogni itinerario per permetterti di godere del mare e delle città senza affaticarti. Soste frequenti in bus, hotel 4★ con ascensore e guide locali trasmettono serenità ad ogni tappa.
+          </p>
+
+          <div class="senior-features-grid" id="senior-features-container">
+            <!-- Renderizzato dinamicamente da script.js -->
+          </div>
+        </div>
+
+        <div class="senior-media">
+          <div style="position: relative; border-radius: var(--radius-lg); overflow: hidden; border: 2px solid var(--color-border-glow); box-shadow: var(--shadow-glow);">
+            <img src="./src/assets/images/assisi_umbria_1786482951651.jpg" alt="Gruppo senior che visita borghi italiani" style="width:100%; height:380px; object-fit:cover; display:block;" referrerPolicy="no-referrer">
+            <div style="position:absolute; bottom:0; inset-x:0; background:linear-gradient(transparent, rgba(7,15,30,0.92)); padding:20px; color:white;">
+              <strong style="font-size:1.1rem; display:block; color:var(--color-yellow);">Passeggiate distese tra il mare e i borghi</strong>
+              <span style="font-size:0.85rem; opacity:0.9;">Gruppi affiatati con tempi calmi per foto, aperitivi o un bel caffè insieme.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE RECENSIONI REALI -->
+  <section class="section section-alt" id="recensioni">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonianze Autentiche</span>
+        <h2 class="section-title">Le Esperienze dei Nostri Viaggiatori</h2>
+        <p class="section-subtitle">
+          Recensioni inviate dai nostri viaggiatori senior e dalle famiglie con persone disabili.
+        </p>
+      </div>
+
+      <div class="reviews-grid" id="reviews-container">
+        <!-- Renderizzato dinamicamente da script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- SEZIONE GALLERIA FOTO SLIDER -->
+  <section class="section" id="galleria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Galleria Fotografica</span>
+        <h2 class="section-title">Scatti dai Nostri Viaggi in Bus & Traghetto</h2>
+        <p class="section-subtitle">
+          Fotografie scattate durante i nostri tour in Italia.
+        </p>
+      </div>
+
+      <!-- Slider Moderno -->
+      <div class="slider-container">
+        <button class="slider-btn prev" onclick="prevSlide()" aria-label="Foto precedente">❮</button>
+        <button class="slider-btn next" onclick="nextSlide()" aria-label="Foto successiva">❯</button>
+        
+        <div class="slider-track" id="slider-track">
+          <!-- Renderizzato dinamicamente da script.js -->
+        </div>
+      </div>
+      <div class="slider-dots" id="slider-dots"></div>
+    </div>
+  </section>
+
+  <!-- FORM CONTATTI -->
+  <section class="section section-alt" id="contatti">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Inizia la Tua Vacanza</span>
+        <h2 class="section-title">Richiedi Informazioni o Disponibilità</h2>
+        <p class="section-subtitle">
+          Compila il modulo senza alcun impegno. Ti ricontatteremo telefonicamente o via email per fornirti tutti i dettagli sul tuo viaggio in bus GT.
+        </p>
+      </div>
+
+      <div class="contact-card">
+        <form id="contact-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="form-name" class="form-label">Nome e Cognome *</label>
+              <input type="text" id="form-name" class="form-control" placeholder="Es. Giuseppe Rossi" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-email" class="form-label">Indirizzo Email *</label>
+              <input type="email" id="form-email" class="form-control" placeholder="infobluviaggi@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="form-phone" class="form-label">Telefono di Contatto *</label>
+              <input type="tel" id="form-phone" class="form-control" placeholder="+39 350 907 9479" required>
+            </div>
+
+            <div class="form-group">
+              <label for="trip-select" class="form-label">Pacchetto di Interesse</label>
+              <select id="trip-select" class="form-control">
+                <!-- Opzioni caricate dinamicamente -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-participants" class="form-label">Numero Partecipanti</label>
+              <select id="form-participants" class="form-control">
+                <option value="1 persona">1 persona (camera singola)</option>
+                <option value="2 persone" selected>2 persone (camera doppia)</option>
+                <option value="3 persone">3 persone</option>
+                <option value="4+ persone">4 o più persone (Gruppo o Famiglia)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="form-needs" class="form-label">Esigenze di Mobilità / Carrozzina</label>
+              <input type="text" id="form-needs" class="form-control" placeholder="Es. carrozzina pieghevole/elettrica, dieta, piano terra...">
+            </div>
+
+            <div class="form-group full">
+              <label for="form-message" class="form-label">Il tuo Messaggio</label>
+              <textarea id="form-message" class="form-control" rows="4" placeholder="Scrivi qui ogni domanda sulle fermate del bus, gli hotel o i dettagli del programma..."></textarea>
+            </div>
+
+            <div class="form-group full">
+              <label class="checkbox-label">
+                <input type="checkbox" id="privacy-check" required>
+                <span>Ho letto e accetto l’<a href="javascript:void(0)" onclick="openLegalModal('privacy')" style="color:var(--color-yellow);">Informativa sulla Privacy</a> per il trattamento dei dati personali.</span>
+              </label>
+            </div>
+
+            <div class="form-group full" style="margin-top: 10px;">
+              <button type="submit" class="btn btn-primary btn-full">
+                Invia Richiesta Senza Impegno
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#home" class="logo" style="margin-bottom:12px;">
+            <div class="logo-icon-box" aria-hidden="true">🚌</div>
+            <div class="logo-text">
+              <span class="logo-name agency-name">Viaggi Insieme</span>
+              <span class="logo-tagline">100% In Bus & Traghetto</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            “Viaggi di gruppo in Italia da 7 a 12 notti in Autobus Gran Turismo e Traghetto (Senza Aereo).”<br>
+            Specializzati in turismo per senior e soluzioni 100% accessibili.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigazione</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home Page</a></li>
+            <li><a href="#flotta" class="footer-link">I Nostri Bus GT</a></li>
+            <li><a href="#viaggi" class="footer-link">I Pacchetti Viaggio</a></li>
+            <li><a href="#accessibilita" class="footer-link">Tour Accessibile ♿</a></li>
+            <li><a href="#recensioni" class="footer-link">Recensioni Reali</a></li>
+            <li><a href="#galleria" class="footer-link">Galleria Foto</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Informazioni Legali</h4>
+          <ul class="footer-links">
+            <li><a href="javascript:void(0)" onclick="openLegalModal('privacy')" class="footer-link">Privacy Policy</a></li>
+            <li><a href="javascript:void(0)" onclick="openLegalModal('cookie')" class="footer-link">Cookie Policy</a></li>
+            <li><a href="javascript:void(0)" onclick="openLegalModal('terms')" class="footer-link">Condizioni di Vendita</a></li>
+            <li><a href="#contatti" class="footer-link">Richiedi Informazioni</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Contatti Diretti</h4>
+          <div class="footer-contact-item">
+            📞 Telefono: <a href="tel:+393509079479" class="agency-phone" style="color:var(--color-yellow); text-decoration:none; font-weight:700;">+39 350 907 9479</a>
+          </div>
+          <div class="footer-contact-item">
+            ✉️ Email: <a href="mailto:infobluviaggi@gmail.com" class="agency-email" style="color:var(--color-yellow); text-decoration:none; font-weight:700;">infobluviaggi@gmail.com</a>
+          </div>
+          <div class="footer-contact-item">
+            📍 Sede: <span class="agency-address">Via Roma 123, 20121 Milano (MI)</span>
+          </div>
+          <div class="footer-contact-item" style="font-size:0.85rem; color:var(--color-text-muted); margin-top:8px;">
+            P.IVA: <strong style="color:#FFFFFF;" class="agency-vat">IT01234567890</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Viaggi Insieme • Tutti i diritti riservati. P.IVA IT01234567890 • Tel: +39 350 907 9479 • Email: infobluviaggi@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALI -->
+  <div class="modal-overlay" id="trip-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h2 class="modal-title" id="trip-modal-title">Dettaglio Viaggio</h2>
+        <button class="modal-close-btn" onclick="closeModal('trip-modal')">&times;</button>
+      </div>
+      <div class="modal-body" id="trip-modal-body"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal-container" style="max-width: 500px;">
+      <div class="modal-body" id="success-modal-body"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="legal-modal">
+    <div class="modal-container" style="max-width: 580px;">
+      <div class="modal-header">
+        <h2 class="modal-title" id="legal-modal-title">Informativa</h2>
+        <button class="modal-close-btn" onclick="closeModal('legal-modal')">&times;</button>
+      </div>
+      <div class="modal-body" id="legal-modal-body"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="configurator-modal">
+    <div class="modal-container" style="max-width: 520px;">
+      <div class="modal-header">
+        <h2 class="modal-title">⚙️ Personalizza Dati Agenzia</h2>
+        <button class="modal-close-btn" onclick="closeModal('configurator-modal')">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="font-size:0.88rem; color:var(--color-text-muted); margin-bottom:16px;">
+          Modifica il nome, telefono o email per aggiornare live i dati su tutto il sito.
+        </p>
+        <form id="configurator-form">
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label">Nome Agenzia</label>
+            <input type="text" id="config-agency-name" class="form-control" required>
+          </div>
+          <div class="form-group" style="margin-bottom:12px;">
+            <label class="form-label">Telefono</label>
+            <input type="text" id="config-agency-phone" class="form-control" required>
+          </div>
+          <div class="form-group" style="margin-bottom:20px;">
+            <label class="form-label">Email</label>
+            <input type="email" id="config-agency-email" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Salva Modifiche
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./agency-config.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
