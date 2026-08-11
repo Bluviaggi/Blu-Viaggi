@@ -1,0 +1,6 @@
+{
+  "name": "Viaggi Insieme - Agenzia Viaggi Italiana",
+  "description": "Sito web professionale e moderno per l'agenzia 'Viaggi Insieme', specializzata in viaggi di gruppo in Italia senza aereo (in bus e traghetto) per senior, famiglie e persone con disabilità.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
