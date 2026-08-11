@@ -1,0 +1,6 @@
+{
+  "name": "BLU VIAGGI - Il Mondo, La Tua Destinazione",
+  "description": "Sito web per l'agenzia 'BLU VIAGGI', specializzata in viaggi di gruppo in Italia con Pensione Completa in Bus Gran Turismo e Traghetto, prenotazioni WhatsApp istantanee e soluzioni 100% accessibili.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
