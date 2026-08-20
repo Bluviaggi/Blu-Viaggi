@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLU VIAGGI | Il Mondo, La Tua Destinazione</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Menu a Lineette (Hamburger) -->
+  <nav class="navbar">
+    <div class="container navbar-content">
+      <a href="#" class="logo">
+        <img src="logo.jpg" alt="Logo BLU VIAGGI" onerror="this.src='https://via.placeholder.com/150x50?text=BLU+VIAGGI'">
+      </a>
+      <button class="menu-toggle" id="menu-open">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Laterale (Overlay) -->
+  <div class="menu-overlay" id="menu-overlay">
+    <button class="menu-close" id="menu-close">&times;</button>
+    <div class="menu-links">
+      <a href="#home">Home</a>
+      <a href="#viaggi">Viaggi Settembre/Ottobre</a>
+      <a href="#recensioni">Recensioni Clienti</a>
+      <a href="https://wa.me/393762884036" class="wa-menu-btn">Prenota su WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Hero Section (Pulita) -->
+  <section class="hero" id="home">
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=2070&auto=format&fit=crop" alt="Background">
+    </div>
+    <div class="hero-text">
+      <h1>Viaggi organizzati in <br><span>Pensione Completa</span></h1>
+      <p>Bus Gran Turismo, Hotel 4★ e assistenza h24.</p>
+      <a href="https://wa.me/393762884036" class="btn-wa-hero"><i class="fab fa-whatsapp"></i> Scrivici ora per info</a>
+    </div>
+  </section>
+
+  <!-- Viaggi Settembre / Ottobre -->
+  <section class="section" id="viaggi">
+    <div class="container">
+      <h2 class="title">Partenze Settembre & Ottobre 2026</h2>
+      <div class="grid" id="trips-container">
+        <!-- Renderizzato da JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Recensioni con Foto -->
+  <section class="section reviews-section" id="recensioni">
+    <div class="container">
+      <h2 class="title">Cosa dicono i nostri viaggiatori</h2>
+      <div class="grid" id="reviews-container">
+        <!-- Renderizzato da JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <img src="logo.jpg" alt="Logo" class="footer-logo" onerror="this.style.display='none'">
+      <p>© 2026 BLU VIAGGI | Il Mondo, La Tua Destinazione</p>
+      <p>Solo assistenza WhatsApp: <strong>+39 376 288 4036</strong></p>
+    </div>
+  </footer>
+
+  <!-- Pulsante Fluttuante WhatsApp -->
+  <a href="https://wa.me/393762884036" class="wa-float">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="agency-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
