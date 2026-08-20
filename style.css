@@ -1,0 +1,50 @@
+:root {
+  --bg-dark: #070F1E;
+  --bg-card: #0F2038;
+  --color-marine: #0077B6;
+  --color-whatsapp: #25D366;
+  --color-yellow: #FACC15;
+  --color-text-main: #F1F5F9;
+  --color-border: #1E3A8A;
+  --font-body: system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-body); background-color: var(--bg-dark); color: var(--color-text-main); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* Header & Logo */
+.header { background: rgba(7, 15, 30, 0.95); padding: 15px 0; border-bottom: 1px solid var(--color-border); position: sticky; top: 0; z-index: 100; }
+.flex-header { display: flex; justify-content: space-between; align-items: center; }
+.logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.logo-img { height: 50px; border-radius: 8px; }
+.logo-name { font-weight: 800; font-size: 1.3rem; color: white; display: block; }
+.logo-tagline { font-size: 0.65rem; color: var(--color-yellow); display: block; }
+
+/* Navigazione */
+.nav-links { display: flex; list-style: none; gap: 20px; }
+.nav-link { color: white; text-decoration: none; font-weight: 700; font-size: 0.9rem; }
+
+/* Hero */
+.hero-section { padding: 100px 0; background: linear-gradient(rgba(7,15,30,0.7), rgba(7,15,30,0.7)), url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=1600'); background-size: cover; }
+.hero-title { font-size: 3rem; margin-bottom: 20px; font-weight: 800; }
+.hero-badge { background: rgba(0, 119, 182, 0.4); padding: 8px 15px; border-radius: 50px; display: inline-block; margin-bottom: 15px; border: 1px solid var(--color-yellow); }
+
+/* Buttons */
+.btn { padding: 12px 25px; border-radius: 50px; text-decoration: none; font-weight: 800; display: inline-block; transition: 0.3s; border: none; cursor: pointer; }
+.btn-whatsapp-hero { background: var(--color-whatsapp); color: white; }
+.btn-secondary { background: rgba(255,255,255,0.1); color: white; border: 1px solid white; margin-left: 10px; }
+
+/* Grid */
+.trips-grid, .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; padding: 40px 0; }
+.card { background: var(--bg-card); border-radius: 15px; overflow: hidden; border: 1px solid var(--color-border); padding-bottom: 20px; }
+.card img { width: 100%; height: 200px; object-fit: cover; }
+.card-content { padding: 20px; }
+.card-price { font-size: 1.8rem; color: var(--color-yellow); font-weight: 800; }
+
+/* WhatsApp Float */
+.whatsapp-float-btn { position: fixed; bottom: 25px; right: 25px; background: var(--color-whatsapp); color: white; padding: 12px 20px; border-radius: 50px; text-decoration: none; display: flex; align-items: center; gap: 10px; z-index: 1000; box-shadow: 0 5px 15px rgba(0,0,0,0.3); font-weight: 800; }
+
+.footer { background: #040A14; padding: 50px 0 20px; border-top: 3px solid var(--color-yellow); }
+.demo-top-bar { background: #050C17; padding: 10px; text-align: center; font-size: 0.8rem; }
+.top-bar-wa-link { color: var(--color-whatsapp); font-weight: 800; text-decoration: none; margin-left: 10px; }
