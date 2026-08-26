@@ -1,0 +1,28 @@
+{
+  "name": "Blu Viaggi",
+  "short_name": "Blu Viaggi",
+  "description": "Viaggi organizzati in Italia con autobus GT, traghetto, hotel e pensione completa.",
+  "lang": "it",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#07152d",
+  "background_color": "#ffffff",
+  "categories": [
+    "travel",
+    "tourism"
+  ],
+  "contact": {
+    "whatsapp": "+39 376 288 4036"
+  },
+  "travel_period": {
+    "from": "2026-09-01",
+    "to": "2026-10-31"
+  },
+  "transport": [
+    "Autobus Gran Turismo",
+    "Traghetto"
+  ],
+  "airplane": false,
+  "meal_plan": "Pensione completa",
+  "accessibility": true
+}
