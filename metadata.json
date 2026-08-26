@@ -1,0 +1,10 @@
+{
+  "name": "Blu Viaggi",
+  "short_name": "Blu Viaggi",
+  "description": "Viaggi organizzati in Italia",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#071226",
+  "theme_color": "#071226",
+  "lang": "it"
+}
