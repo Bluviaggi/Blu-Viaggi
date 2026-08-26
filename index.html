@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blu Viaggi | Viaggi in Italia</title>
+
+  <meta name="description"
+        content="Blu Viaggi - Viaggi in Italia in autobus e traghetto, pensione completa, soggiorni da 3 a 10 notti e soluzioni accessibili.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+  <a href="#home" class="logo">
+    <div class="logo-symbol">
+      <span>🌊</span>
+    </div>
+
+    <div>
+      <strong>BLU</strong>
+      <strong>VIAGGI</strong>
+      <small>IL MONDO, LA TUA DESTINAZIONE</small>
+    </div>
+  </a>
+
+  <button class="menu-button" id="menuButton" aria-label="Apri menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+</header>
+
+
+<nav class="side-menu" id="sideMenu">
+
+  <button class="close-menu" id="closeMenu">×</button>
+
+  <div class="menu-logo">BLU VIAGGI</div>
+
+  <a href="#home">Home</a>
+  <a href="#pacchetti">Pacchetti viaggio</a>
+  <a href="#accessibilita">Accessibilità</a>
+  <a href="#recensioni">Recensioni</a>
+  <a href="#chi-siamo">Chi siamo</a>
+  <a href="#contatti">Contatti</a>
+
+  <a
+    class="menu-whatsapp"
+    href="https://wa.me/393762884036"
+    target="_blank">
+    💬 WhatsApp
+  </a>
+
+</nav>
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<main>
+
+<section class="hero" id="home">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <div class="hero-badge">
+      🌊 BLU VIAGGI · PENSIONE COMPLETA
+    </div>
+
+    <h1>
+      Viaggia in Italia.<br>
+      <span>In totale relax.</span>
+    </h1>
+
+    <p>
+      Viaggi organizzati in autobus e traghetto,
+      hotel selezionati, pensione completa e assistenza.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#pacchetti" class="btn btn-primary">
+        Scopri i viaggi
+      </a>
+
+      <a
+        href="https://wa.me/393762884036?text=Ciao%20Blu%20Viaggi%2C%20vorrei%20avere%20informazioni%20sui%20vostri%20viaggi."
+        target="_blank"
+        class="btn btn-whatsapp">
+        💬 Contattaci su WhatsApp
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="quick-info">
+
+  <div>
+    <span>🚌</span>
+    <strong>Trasporto incluso</strong>
+    <small>Bus GT e traghetto</small>
+  </div>
+
+  <div>
+    <span>🍽️</span>
+    <strong>Pensione completa</strong>
+    <small>Colazione, pranzo e cena</small>
+  </div>
+
+  <div>
+    <span>♿</span>
+    <strong>Viaggi accessibili</strong>
+    <small>Soluzioni dedicate</small>
+  </div>
+
+  <div>
+    <span>🏨</span>
+    <strong>Hotel selezionati</strong>
+    <small>Comfort e assistenza</small>
+  </div>
+
+</section>
+
+
+<section class="section" id="pacchetti">
+
+  <div class="section-heading">
+
+    <span class="eyebrow">SETTEMBRE · OTTOBRE 2026</span>
+
+    <h2>I nostri pacchetti</h2>
+
+    <p>
+      Scegli la destinazione e scopri tutto ciò che è compreso.
+      Prezzi chiari, senza sorprese.
+    </p>
+
+  </div>
+
+
+  <div class="filters">
+
+    <button class="filter active" data-filter="tutti">
+      Tutti
+    </button>
+
+    <button class="filter" data-filter="settembre">
+      Settembre
+    </button>
+
+    <button class="filter" data-filter="ottobre">
+      Ottobre
+    </button>
+
+    <button class="filter" data-filter="accessibile">
+      ♿ Accessibili
+    </button>
+
+  </div>
+
+
+  <div class="packages-grid" id="packagesGrid"></div>
+
+</section>
+
+
+<section class="accessibility-section" id="accessibilita">
+
+  <div class="accessibility-content">
+
+    <span class="eyebrow">VIAGGIARE È PER TUTTI</span>
+
+    <h2>Vacanze pensate anche per chi ha bisogno di più assistenza.</h2>
+
+    <p>
+      Abbiamo creato alcune soluzioni specifiche per persone con
+      disabilità, mobilità ridotta e persone anziane.
+    </p>
+
+    <div class="accessibility-list">
+
+      <div>✓ Hotel con camere accessibili</div>
+      <div>✓ Autobus con assistenza quando disponibile</div>
+      <div>✓ Informazioni dettagliate prima della partenza</div>
+      <div>✓ Possibilità di accompagnatore</div>
+      <div>✓ Ritmi di viaggio più tranquilli</div>
+      <div>✓ Assistenza nella programmazione</div>
+
+    </div>
+
+    <a
+      href="https://wa.me/393762884036?text=Ciao%20Blu%20Viaggi%2C%20vorrei%20informazioni%20sui%20viaggi%20accessibili."
+      target="_blank"
+      class="btn btn-whatsapp">
+      💬 Chiedi informazioni
+    </a>
+
+  </div>
+
+</section>
+
+
+<section class="section reviews-section" id="recensioni">
+
+  <div class="section-heading">
+
+    <span class="eyebrow">ESPERIENZE</span>
+
+    <h2>Le opinioni dei nostri viaggiatori</h2>
+
+    <p>
+      Alcune recensioni dimostrative utilizzate per la presentazione
+      del progetto.
+    </p>
+
+  </div>
+
+  <div class="reviews-grid" id="reviewsGrid"></div>
+
+</section>
+
+
+<section class="about-section" id="chi-siamo">
+
+  <div>
+
+    <span class="eyebrow">BLU VIAGGI</span>
+
+    <h2>Partire deve essere semplice.</h2>
+
+    <p>
+      Organizziamo soggiorni in Italia pensati per chi vuole
+      dimenticare lo stress dell'organizzazione e godersi la vacanza.
+    </p>
+
+    <p>
+      Trasporto, hotel, pasti e programma vengono indicati
+      chiaramente all'interno di ogni pacchetto.
+    </p>
+
+  </div>
+
+  <div class="about-card">
+
+    <div>🚌</div>
+    <strong>Bus GT</strong>
+    <span>Viaggi senza aereo</span>
+
+    <div>🍽️</div>
+    <strong>Pensione completa</strong>
+    <span>Tutto organizzato</span>
+
+    <div>♿</div>
+    <strong>Accessibilità</strong>
+    <span>Soluzioni dedicate</span>
+
+  </div>
+
+</section>
+
+
+<section class="contact-section" id="contatti">
+
+  <span class="eyebrow">CONTATTI</span>
+
+  <h2>Vuoi partire con noi?</h2>
+
+  <p>
+    Scrivici direttamente su WhatsApp.
+  </p>
+
+  <a
+    href="https://wa.me/393762884036?text=Ciao%20Blu%20Viaggi%2C%20vorrei%20informazioni%20su%20un%20viaggio."
+    target="_blank"
+    class="btn btn-whatsapp big">
+    💬 Scrivi su WhatsApp
+  </a>
+
+  <p class="phone">
+    +39 376 288 4036
+  </p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="footer-logo">
+    BLU VIAGGI
+  </div>
+
+  <p>
+    Viaggi organizzati in Italia · Settembre e Ottobre 2026
+  </p>
+
+  <p class="demo-note">
+    Le recensioni presenti nella sezione dedicata sono contenuti dimostrativi.
+  </p>
+
+</footer>
+
+
+<div class="floating-whatsapp">
+
+  <a
+    href="https://wa.me/393762884036?text=Ciao%20Blu%20Viaggi%2C%20vorrei%20informazioni%20sui%20vostri%20pacchetti."
+    target="_blank">
+    💬
+    <span>WhatsApp</span>
+  </a>
+
+</div>
+
+
+<script src="agency-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
